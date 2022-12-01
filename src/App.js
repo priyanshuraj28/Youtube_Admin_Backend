@@ -9,6 +9,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import videoReducer from './Reducers/Reducer'
 import PostVideo from "./Components/PostVideo/PostVideo";
 import Editpost from "./Components/Editpost";
+import CustomizedDialogs from "./Components/Popup";
 
 const middleware = [thunk];
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -29,7 +30,7 @@ function App() {
     </div> */}
       <Nav></Nav>
       <Switch>
-        <Route path='/dashboard' exact ><AllVideos></AllVideos></Route>
+        <Route path='/dashboard' exact ><AllVideos></AllVideos><CustomizedDialogs></CustomizedDialogs></Route>
         <Route path='/add' exact><PostVideo></PostVideo></Route>
         <Route path="/editpost/:id" exact><Editpost></Editpost></Route>
       </Switch>
