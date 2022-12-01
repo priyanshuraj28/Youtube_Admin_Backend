@@ -1,0 +1,24 @@
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+}
+.name{
+    color: whitesmoke;
+}
+span{
+    color: black;
+    /* display: flex; */
+    margin-right: 40px;
+}
+
+.navOption{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between ;
+    width: 200px; */
+}
